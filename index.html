@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bonny Modipa's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <!-- AOS Library for scroll animations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+</head>
+<body class="white-theme">
+  <!-- Custom Neon Cursor -->
+  <div class="custom-cursor"></div>
+  
+  <!-- THEME TOGGLE BUTTON - Repositioned -->
+  <button id="themeToggle" class="btn theme-toggle">🌞</button>
+
+  <!-- DESKTOP NAVIGATION -->
+  <nav id="desktop-nav">
+    <div class="logo">Bonny Modipa</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HAMBURGER NAVIGATION -->
+  <nav id="hamburger-nav">
+    <div class="logo">Bonny Modipa</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+        <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PROFILE SECTION -->
+  <section id="profile" data-aos="zoom-in">
+    <div class="section__pic-container">
+      <img src="./assets/WhatsApp Image 2024-12-06 at 17.08.58.jpeg" alt="Bonny Modipa Profile Picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Bonny Modipa</h1>
+      <!-- Typewriter effect here -->
+      <p class="section__text__p2"><span id="typed"></span></p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Lesedi-Gwebu-CV.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <a href="https://www.linkedin.com/in/kgothatso-modipa-45127324b" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon social-icon" />
+        </a>
+        <a href="https://github.com/bonnysi76" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/github.png" alt="My Github Profile" class="icon social-icon" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" data-aos="fade-up">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container about-pic-container" data-aos="fade-right">
+        <img src="./assets/WhatsApp Image 2024-12-04 at 17.31.11.jpeg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container" data-aos="fade-left">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>1 year <br>IT Technical and Software Support Intern.</p>
+            <p>3+ years <br>Sales and Marketing.</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>- Bachelors of Science in Security and Network Engineering.<br>- Diploma in Software Engineering.</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I offer a strong blend of expertise in Security and Network Engineering, Software Development and Network Security, along with proven communication and strategic skills from my experience in sales and marketing. Proficient in Microsoft Office, I am a versatile and results-driven professional ready to add value to any IT organization.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" data-aos="fade-up">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container" data-aos="fade-up">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">IT Technical Support Intern</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <!-- more skill articles ... -->
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">IT Software Support Intern</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Resolving Software-Related Issues</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <!-- more skill articles ... -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" data-aos="fade-up">
+    <p class="section__text__p1">Browse My</p>
+    <h1 class="title">Projects</h1>
+    
+    <!-- Project Carousel -->
+    <div class="carousel-container">
+      <div class="carousel-wrapper">
+        <div class="carousel-slides">
+          <div class="project-card" data-aos="flip-left">
+            <h3>Wi-fi Hacking Investigation in Public Networks</h3>
+            <p>- Investigated vulnerabilities in public Wi-Fi networks, analyzing encryption protocols (WEP, WPA, WPA3).</p>
+            <p>- Skills: Network security, ethical hacking, wireless protocols.</p>
+          </div>
+          
+          <div class="project-card" data-aos="flip-left">
+            <h3>Network Security Implementation</h3>
+            <p>- Designed and implemented a secure network infrastructure for a small business.</p>
+            <p>- Skills: Firewall configuration, VPN setup, intrusion detection systems.</p>
+          </div>
+          
+          <div class="project-card" data-aos="flip-left">
+            <h3>Web Application Development</h3>
+            <p>- Created a responsive web application for inventory management.</p>
+            <p>- Skills: HTML, CSS, JavaScript, PHP, MySQL.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button id="prevBtn" class="carousel-btn">❮</button>
+        <div class="carousel-dots"></div>
+        <button id="nextBtn" class="carousel-btn">❯</button>
+      </div>
+    </div>
+    
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#achievements'" />
+  </section>
+
+  <!-- ACHIEVEMENTS SECTION (Replaced Certificates) -->
+  <section id="achievements" data-aos="fade-up">
+    <p class="section__text__p1">My</p>
+    <h1 class="title">Achievements & Certifications</h1>
+    <div class="achievements-container">
+      <div class="achievement-item">
+        <div class="achievement-icon">🏆</div>
+        <div class="achievement-details">
+          <h3>CompTIA Network+ Certification</h3>
+          <p>Earned in 2023 - Demonstrates expertise in networking concepts and implementation</p>
+        </div>
+      </div>
+      
+      <div class="achievement-item">
+        <div class="achievement-icon">🏅</div>
+        <div class="achievement-details">
+          <h3>Cisco Certified Network Associate (CCNA)</h3>
+          <p>Earned in 2022 - Proficiency in network administration and troubleshooting</p>
+        </div>
+      </div>
+      
+      <div class="achievement-item">
+        <div class="achievement-icon">🎓</div>
+        <div class="achievement-details">
+          <h3>Microsoft Certified: Azure Fundamentals</h3>
+          <p>Earned in 2023 - Knowledge of cloud concepts and Microsoft Azure services</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" data-aos="fade-up">
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:bonnysithole76@gmail.com">bonnysithole76@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/kgothatso-modipa-45127324b">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Bonny Modipa. All Rights Reserved.</p>
+  </footer>
+
+  <!-- External Scripts: Typed.js, GSAP, AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
