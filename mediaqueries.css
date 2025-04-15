@@ -1,0 +1,148 @@
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN */
+
+/* Tablets and smaller laptops */
+@media screen and (max-width: 1024px) {
+  /* Navigation */
+  #desktop-nav {
+    padding: 0.5rem 1rem;
+  }
+
+  nav .logo {
+    font-size: 1.5rem;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  /* Profile Section */
+  #profile {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .section__pic-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* About Section */
+  .about-containers {
+    flex-direction: column;
+  }
+
+  .about-pic-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Projects */
+  .project-card {
+    padding: 1.2rem;
+  }
+
+  /* Theme Toggle */
+  .theme-toggle {
+    top: 4.5rem;
+    right: 0.5rem;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+  /* Navigation */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  /* Profile Section */
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .section__text {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  /* About Section */
+  .about-pic-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* Projects */
+  .project-card {
+    min-width: 100%;
+  }
+
+  /* Achievements */
+  .achievement-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .achievement-details h3 {
+    text-align: center;
+  }
+
+  /* Contact */
+  .contact-info-container {
+    flex-direction: column;
+  }
+
+  /* Theme Toggle */
+  .theme-toggle {
+    top: 4rem;
+    right: 0.5rem;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  /* Profile Section */
+  .section__pic-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  /* Sections */
+  section {
+    padding: 2rem 1rem;
+  }
+
+  /* Social Icons */
+  .social-icon {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  /* Carousel */
+  .carousel-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
